@@ -9,8 +9,13 @@ block content
       { flavor: "Orange", volume: 500, sugarContent: 22, brand: "Tropicana" },
       { flavor: "Apple", volume: 350, sugarContent: 18, brand: "Mott's" },
       { flavor: "Grape", volume: 1000, sugarContent: 36, brand: "Welch's" }
-    ];
+    ]
 
   div(class="container-fluid")
     div(class="row")
       each item in results
+        div(class="col-sm-2")
+          p Flavor: #{item.flavor}
+          p Volume: #{item.volume}
+          p Sugar Content: #{item.sugarContent} 
+          p Brand: #{item.brand}
