@@ -4,6 +4,14 @@ block content
   h1= title
   p Welcome to My very new house #{title}
   
-  button(type="button", class="btn btn-secondary") Press me
+  button(type="button", class="btn btn-secondary", onclick="reduce()") Press me
 
   div(id="use") take some away
+
+  script. 
+    let current = 11;
+    let quantity = 2;
+
+    function reduce() {
+      
+    }
