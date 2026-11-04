@@ -2,23 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to My very new house #{title}
   
-  button(type="button", class="btn btn-secondary", onclick="reduce()") Press me
 
-  div(id="use") take some away
-
-  script. 
-    let current = 11;
-    let quantity = 2;
-
-    function reduce() {
-      current -= quantity;
-      
-      if (current < 0){
-        current = 0;
-      }
-      document.getElementById("use").textContent = `reduced by ${quantity} to ${current}`;
-    }
-
-  
+  -
+    let results = [
+      { flavor: "Orange", volume: 500, sugarContent: 22, brand: "Tropicana" },
+      { flavor: "Apple", volume: 350, sugarContent: 18, brand: "Mott's" },
+      { flavor: "Grape", volume: 1000, sugarContent: 36, brand: "Welch's" }
+    ];
