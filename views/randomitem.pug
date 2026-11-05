@@ -13,10 +13,10 @@ block content
       "pineapple juice.jpg"
     ]
 
-    each item in [1, 2, 3]
-      -
-        let randomIndex = Math.floor(Math.random() * 5);
-        let imageName = image_names[randomIndex];
+  each item in [1, 2, 3]
+    -
+      let randomIndex = Math.floor(Math.random() * 5);
+      let imageName = image_names[randomIndex];
 
-      img(src=`/images/${imageName}`, alt=`Juice: ${imageName}`, height="300", width="300")
+    img(src=`/images/${imageName}`, alt=`Juice: ${imageName}`, height="300", width="300")
     
