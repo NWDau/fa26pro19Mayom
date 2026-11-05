@@ -4,7 +4,7 @@ block content
   h1= title 
 
   p Rows: #{query.rows}
-  q Columns: #{query.cols}
+  p Columns: #{query.cols}
 
   
   - 
@@ -27,5 +27,5 @@ block content
         tr#middle 
           - for (let j = 0; j < cols; j++){
             td= j - i
-          i }
+          - }
       - }
