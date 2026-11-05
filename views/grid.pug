@@ -1,24 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to My very new house #{title}
-  
-  button(type="button", class="btn btn-secondary", onclick="reduce()") Press me
+  h1 = title 
 
-  div(id="use") take some away
+  p Welcome to our application! 
+  button Click me
 
-  script. 
-    let current = 11;
-    let quantity = 2;
 
-    function reduce() {
-      current -= quantity;
-      
-      if (current < 0){
-        current = 0;
-      }
-      document.getElementById("use").textContent = `reduced by ${quantity} to ${current}`;
-    }
-
-  
+    
